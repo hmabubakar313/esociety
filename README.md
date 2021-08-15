@@ -1,6 +1,6 @@
 # esociety
-A web app for the communication of university communities. it'll make easy to communication between the societies. here is what this project going to have:
-->Community you can join or leave
-->User can post upcoming event and share it in the community
--> User can chat with each other
--> this will help students of different universities to better know each other.
+I'm working on a project named #esociety.
+I'm Using twitter API to entertain users daily with new content,
+Discussion board for daily hashtags on Twitter.
+User profiles will be ranked based on discussion review. user rank increases when the user engaged in more discussions.
+Users will get twitter content with #sentimental_analysis posts that are positive or negative.
