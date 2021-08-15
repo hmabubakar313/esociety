@@ -1,0 +1,534 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://rareti-btemplates.blogspot.com/ -->
+<html class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="{% static 'css/115981500-css_bundle_v2.css' %}" rel="stylesheet" type="text/css">
+        {% load bootstrap4 %}
+  
+        {% bootstrap_javascript jquery='full' %}
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <meta content="blogger" name="generator">
+        <link href="https://rareti-btemplates.blogspot.com/favicon.ico" rel="icon" type="image/x-icon">
+        <link href="http://rareti-btemplates.blogspot.com/" rel="canonical">
+        <link rel="alternate" type="application/atom+xml" title="Rareti - Atom" href="https://rareti-btemplates.blogspot.com/feeds/posts/default">
+        <link rel="alternate" type="application/rss+xml" title="Rareti - RSS" href="https://rareti-btemplates.blogspot.com/feeds/posts/default?alt=rss">
+        <link rel="service.post" type="application/atom+xml" title="Rareti - Atom" href="https://www.blogger.com/feeds/7352335209452584562/posts/default">
+        <link rel="me" href="https://www.blogger.com/profile/11448038113626124391">
+        <meta content="http://rareti-btemplates.blogspot.com/" property="og:url">
+        <meta content="Rareti" property="og:title">
+        <meta content="BTemplates, the best place for Blogger Templates" property="og:description">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+        <title>
+            Rareti
+        </title>
+       
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1009.0" data-gr-ext-installed="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3" id="sidebar">
+                    <div class="header-section section" id="header-section">
+                        <div class="widget Header" data-version="1" id="Header1">
+                            <div id="header-inner">
+                                <div class="titlewrapper">
+                                    <h1 class="site-title">
+                                        <a class="logo" href="https://rareti-btemplates.blogspot.com/">
+                                        Rareti
+                                        </a>
+                                    </h1>
+                                </div>
+                                <h2 class="site-description">
+                                    BTemplates, the best place for Blogger Templates
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="sosial">
+                        <a class="fab fa-2x fa-facebook" href="https://rareti-btemplates.blogspot.com/#">
+                        <span class="sr-only">
+                        facebook
+                        </span>
+                        </a>
+                        <a class="fab fa-2x fa-twitter" href="https://rareti-btemplates.blogspot.com/#">
+                        <span class="sr-only">
+                        twitter
+                        </span>
+                        </a>
+                        <a class="fab fa-2x fa-github" href="https://rareti-btemplates.blogspot.com/#">
+                        <span class="sr-only">
+                        github
+                        </span>
+                        </a>
+                        <a class="fab fa-2x fa-google-plus" href="https://rareti-btemplates.blogspot.com/#">
+                        <span class="sr-only">
+                        google plus
+                        </span>
+                        </a>
+                    </div>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">
+                    Toggle navigation
+                    </span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <div class="menu-testing-menu-container" id="primary-menu">
+                            <div class="top-menutop section" id="top-menutop">
+                                <div class="widget PageList" data-version="1" id="PageList8">
+                                    <div class="widget-content">
+                                        <ul class="menu">
+                                            <li id="currentpage">
+                                                <a href="https://rareti-btemplates.blogspot.com/">
+                                                Home
+                                                </a>
+                                            </li>
+                                            <li id="currentpage">
+                                              <a href="{% url 'profile' %}">
+                                              Profile
+                                              </a>
+                                          </li>
+                                            <li>
+                                                <a href="https://rareti-btemplates.blogspot.com/p/about.html">
+                                                About
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://facebook.com/bloggertemplates">
+                                                Facebook
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.youtube.com/c/btemplates?sub_confirmation=1">
+                                                YouTube
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://twitter.com/btemplates">
+                                                Twitter
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://pinterest.com/btemplates">
+                                                Pinterest
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="clear"></div>
+                                        <span class="widget-item-control">
+                                        <span class="item-control blog-admin">
+                                        <a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PageList8&quot;));" rel="nofollow" target="configPageList8" title="Edit">
+                                        <img alt="" height="18" src="{% static 'images/icon18_wrench_allbkg.png' %}" width="18">
+                                        </a>
+                                        </span>
+                                        </span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-left section" id="sidebar-left">
+                        <div class="widget Attribution" data-version="1" id="Attribution1">
+                            <div class="widget-content" style="text-align: center;">
+                                Powered by <a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+                            </div>
+                            <div class="clear"></div>
+                            <span class="widget-item-control">
+                            <span class="item-control blog-admin">
+                            <a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" rel="nofollow" target="configAttribution1" title="Edit">
+                            <img alt="" height="18" src="{% static 'images/icon18_wrench_allbkg.png' %}" width="18">
+                            </a>
+                            </span>
+                            </span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-holder">
+                    <header class="clearfix">
+                        <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-7 col-lg-offset-2 col-content" id="description">
+                            <h1 class="sr-only"></h1>
+                            <p class="siteintro sr-only"></p>
+                        </div>
+                        <div class="col-lg-12 col-sm-12 col-md-3" id="nav-search">
+                            <div id="search-holder">
+                                <form action="https://rareti-btemplates.blogspot.com/search/" id="search-form" method="get" role="search">
+                                    <input class="search-field" name="q" type="search" value="Search...">
+                                </form>
+                            </div>
+                            <button id="search-btn">
+                            <i class="fa fa-2x fa-search"></i>
+                            </button>
+                        </div>
+                    </header>
+                </div>
+                <div class="container-fluid " style=" width: 75%; height: 30%";  >
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-md-offset-2">
+                            <a href="#create_post" data-toggle="collapse"><h1>Create post</h1></a>
+                            <form action="/save_post/" method="POST">
+                                {% csrf_token %}
+                                <div id="create_post" class="collapse" class="form-group has-error">
+                                    <label for="slug">Slug <span class="require">*</span> <small>(This field use in url path.)</small></label>
+                                    <input type="text" class="form-control" name="slug" />
+                                    <span class="help-block">Field not entered!</span>
+                                </div>
+                                <div id="create_post" class="collapse" class="form-group">
+                                    <label for="title">Title <span class="require">*</span></label>
+                                    <input type="text" class="form-control" name="title" />
+                                </div>
+                                <div  id="create_post" class="collapse" class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea rows="5" class="form-control" name="description" ></textarea>
+                                </div>
+                                <div id="create_post" class="collapse" class="form-group">
+                                    <p><span class="require">*</span> - required fields</p>
+                                </div>
+                                <div id="create_post" class="collapse" class="form-group">
+                                    <button type="submit" class="btn btn-primary">
+                                    Create
+                                    </button>
+                                    <button class="btn btn-default">
+                                    Cancel
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-9 col-md-offset-3 col-lg-6 col-lg-offset-3 col-content">
+                    <div class="main-blog-section section" id="main-blog-section">
+                        <div class="widget Blog" data-version="1" id="Blog1">
+                            <div class="blog-posts hfeed">
+                                <!--Can't find substitution for tag [defaultAdStart]-->
+                                <div class="date-outer">
+                                    <h2 class="date-header">
+                                        <span>
+                                        Monday, August 1, 2016
+                                        </span>
+                                    </h2>
+                                    <div class="date-posts">
+                                        <div class="post-outer">
+                                            <div class="article-holder">
+                                                <article class="post hentry">
+                                                    <a name="1233629710084935028"></a>
+                                                    <div class="post-header-line-1"></div>
+                                                    <div class="post-body entry-content">
+                                                        <h2 class="post-title entry-title">
+                                                            <a href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html">
+                                                            Images in this template.
+                                                            </a>
+                                                        </h2>
+                                                        <p class="post-date-author">
+                                                            <i class="fa fa-calendar"></i>
+                                                            &nbsp;&nbsp;
+                                                            4:04 PM
+                                                            &nbsp;&nbsp;
+                                                            <i class="fa fa-user"></i>
+                                                            &nbsp;&nbsp;
+                                                            <a href="https://www.blogger.com/profile/11448038113626124391" rel="author" title="author profile">
+                                                            BTemplates
+                                                            </a>
+                                                        </p>
+                                                        <hr>
+                                                        <div id="summary1233629710084935028">
+                                                            <img src="{% static 'images/btemplates-china-by-francisco-oliveros.jpg' %}" class="pbtthumbimg">
+                                                            <div style="line-height:1.6;">
+                                                                <p>
+                                                                    China. Photo by Francisco.
+                                                                    1 Images in this template. You can download all the images going to this Picasa album or clicking on them in the next list:no_image.j...
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <script type="text/javascript">
+                                                            createSummaryAndThumb("summary1233629710084935028");
+                                                        </script>
+                                                        <div style="float:left;padding-right:10px;margin-top:10px;">
+                                                            <a class="morer" href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html">
+                                                            Read More
+                                                            </a>
+                                                        </div>
+                                                        <div style="clear: both;"></div>
+                                                    </div>
+                                                    <div class="post-meta">
+                                                        <p>
+                                                            <i class="fa fa-folder-open"></i>
+                                                            &nbsp;&nbsp;
+                                                            <a href="https://rareti-btemplates.blogspot.com/search/label/Images" rel="tag">
+                                                            Images
+                                                            </a>
+                                                            / 
+                                                            <a href="https://rareti-btemplates.blogspot.com/search/label/Tag" rel="tag">
+                                                            Tag
+                                                            </a>
+                                                        </p>
+                                                        <p>
+                                                            <i class="fa fa-comment"></i>
+                                                            &nbsp;&nbsp;
+                                                            <a href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html#comment-form" onclick="">
+                                                            No Comments
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="post-footer sr-only">
+                                                        <div class="post-footer-line post-footer-line-1">
+                                                            <span class="post-author vcard">
+                                                            <span class="fn">
+                                                            <a href="https://www.blogger.com/profile/11448038113626124391" rel="author" title="author profile">
+                                                            BTemplates
+                                                            </a>
+                                                            </span>
+                                                            </span>
+                                                            <span class="post-timestamp">
+                                                            at
+                                                            <a class="timestamp-link" href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html" rel="bookmark" title="permanent link">
+                                                            <abbr class="published" title="2016-08-01T16:04:00-07:00">
+                                                            4:04 PM
+                                                            </abbr>
+                                                            </a>
+                                                            </span>
+                                                            <span class="post-comment-link">
+                                                            <a class="comment-link" href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html#comment-form" onclick="">
+                                                            0
+                                                            comments
+                                                            </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="post-footer-line post-footer-line-2"></div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div style="clear: both;"></div>
+                                        </div>
+                                        <div class="post-outer">
+                                            <div style="clear: both;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Can't find substitution for tag [adEnd]-->
+                            </div>
+                            <div style="clear: both;"></div>
+                            <div class="blog-pager" id="blog-pager">
+                                <a class="home-link" href="https://rareti-btemplates.blogspot.com/">
+                                Home
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="blog-feeds">
+                                <div class="feed-links">
+                                    Subscribe to:
+                                    <a class="feed-link" href="https://rareti-btemplates.blogspot.com/feeds/posts/default" target="_blank" type="application/atom+xml">
+                                    Posts
+                                    (
+                                    Atom
+                                    )
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-9 col-md-offset-3 col-lg-3 col-lg-offset-0" id="sidebar-rightedt">
+                    <div class="sidebar-right section" id="sidebar-right">
+                        <div class="widget PopularPosts" data-version="1" id="PopularPosts1">
+                            <h3>
+                                Popular Posts
+                            </h3>
+                            <div class="widget-content popular-posts">
+                                <ul>
+                                    <li>
+                                        <div class="item-thumbnail-only">
+                                            <div class="item-thumbnail">
+                                                <a href="https://rareti-btemplates.blogspot.com/2016/08/demo-post-with-formatted-elements-and.html" target="_blank">
+                                                <img alt="" border="0" height="72" src="{% static 'images/btemplates-aquarium-by-francisco-oliveros(1).jpg' %}" width="72">
+                                                </a>
+                                            </div>
+                                            <div class="item-title">
+                                                <a href="https://rareti-btemplates.blogspot.com/2016/08/demo-post-with-formatted-elements-and.html">
+                                                Demo post with formatted elements and comments.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </li>
+                                    <li>
+                                        <div class="item-thumbnail-only">
+                                            <div class="item-thumbnail">
+                                                <a href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html" target="_blank">
+                                                <img alt="" border="0" height="72" src="{% static 'images/btemplates-china-by-francisco-oliveros(1).jpg' %}" width="72">
+                                                </a>
+                                            </div>
+                                            <div class="item-title">
+                                                <a href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html">
+                                                Images in this template.
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                                <span class="widget-item-control">
+                                <span class="item-control blog-admin">
+                                <a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PopularPosts1&quot;));" rel="nofollow" target="configPopularPosts1" title="Edit">
+                                <img alt="" height="18" src="./icon18_wrench_allbkg.png" width="18">
+                                </a>
+                                </span>
+                                </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="widget Label" data-version="1" id="Label1">
+                            <h3>
+                                Categories
+                            </h3>
+                            <div class="widget-content list-label-widget-content">
+                                <ul>
+                                    <li>
+                                        <a dir="ltr" href="https://rareti-btemplates.blogspot.com/search/label/Blogger">
+                                        Blogger
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a dir="ltr" href="https://rareti-btemplates.blogspot.com/search/label/BTemplates">
+                                        BTemplates
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a dir="ltr" href="https://rareti-btemplates.blogspot.com/search/label/Demo">
+                                        Demo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a dir="ltr" href="https://rareti-btemplates.blogspot.com/search/label/Images">
+                                        Images
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a dir="ltr" href="https://rareti-btemplates.blogspot.com/search/label/Tag">
+                                        Tag
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                                <span class="widget-item-control">
+                                <span class="item-control blog-admin">
+                                <a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label1&quot;));" rel="nofollow" target="configLabel1" title="Edit">
+                                <img alt="" height="18" src="./icon18_wrench_allbkg.png" width="18">
+                                </a>
+                                </span>
+                                </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="widget BlogArchive" data-version="1" id="BlogArchive1">
+                            <h3>
+                                Blog Archive
+                            </h3>
+                            <div class="widget-content">
+                                <div id="ArchiveList">
+                                    <div id="BlogArchive1_ArchiveList">
+                                        <select id="BlogArchive1_ArchiveMenu">
+                                            <option value="">
+                                                Blog Archive
+                                            </option>
+                                            <option value="https://rareti-btemplates.blogspot.com/2016/08/">
+                                                August
+                                                (
+                                                6
+                                                )
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                                <span class="widget-item-control">
+                                <span class="item-control blog-admin">
+                                <a class="quickedit" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogArchive1&quot;));" rel="nofollow" target="configBlogArchive1" title="Edit">
+                                <img alt="" height="18" src="./icon18_wrench_allbkg.png" width="18">
+                                </a>
+                                </span>
+                                </span>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="footer-holder">
+            <div class="row">
+                <footer>
+                    <div class="col-sm-9 col-md-7 col-md-offset-3 col-lg-offset-3 col-content">
+                        <!-- Do not edit or remove credits without our permission: newbloggerthemes.com -->
+                        <p id="copy">
+                            Copyright © 
+                            2021
+                            <a href="https://rareti-btemplates.blogspot.com/">
+                            Rareti
+                            </a>
+                            | Powered by 
+                            <a href="https://www.blogger.com/">
+                            Blogger
+                            </a>
+                            Created By: 
+                            <a class="copyright" href="http://www.widiyanata.com/" title="widiyanata">
+                            Widiyanata
+                            </a>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-md-2 col-lg-3">
+                        <p id="theme">
+                            <a href="https://rareti-btemplates.blogspot.com/#top" id="top">
+                            <i class="fa fa-caret-square-o-up"></i>
+                            TOP
+                            </a>
+                        </p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript">
+           
+            +function(a){"use strict";var b=function(c,d){this.$element=a(c),this.options=a.extend({},b.DEFAULTS,d),this.transitioning=null,this.options.parent&&(this.$parent=a(this.options.parent)),this.options.toggle&&this.toggle()};b.DEFAULTS={toggle:!0},b.prototype.dimension=function(){var a=this.$element.hasClass("width");return a?"width":"height"},b.prototype.show=function(){if(this.transitioning||this.$element.hasClass("in"))return;var b=a.Event("show.bs.collapse");this.$element.trigger(b);if(b.isDefaultPrevented())return;var c=this.$parent&&this.$parent.find("> .panel > .in");if(c&&c.length){var d=c.data("bs.collapse");if(d&&d.transitioning)return;c.collapse("hide"),d||c.data("bs.collapse",null)}var e=this.dimension();this.$element.removeClass("collapse").addClass("collapsing")[e](0),this.transitioning=1;var f=function(){this.$element.removeClass("collapsing").addClass("collapse in")[e]("auto"),this.transitioning=0,this.$element.trigger("shown.bs.collapse")};if(!a.support.transition)return f.call(this);var g=a.camelCase(["scroll",e].join("-"));this.$element.one(a.support.transition.end,a.proxy(f,this)).emulateTransitionEnd(350)[e](this.$element[0][g])},b.prototype.hide=function(){if(this.transitioning||!this.$element.hasClass("in"))return;var b=a.Event("hide.bs.collapse");this.$element.trigger(b);if(b.isDefaultPrevented())return;var c=this.dimension();this.$element[c](this.$element[c]())[0].offsetHeight,this.$element.addClass("collapsing").removeClass("collapse").removeClass("in"),this.transitioning=1;var d=function(){this.transitioning=0,this.$element.trigger("hidden.bs.collapse").removeClass("collapsing").addClass("collapse")};if(!a.support.transition)return d.call(this);this.$element[c](0).one(a.support.transition.end,a.proxy(d,this)).emulateTransitionEnd(350)},b.prototype.toggle=function(){this[this.$element.hasClass("in")?"hide":"show"]()};var c=a.fn.collapse;a.fn.collapse=function(c){return this.each(function(){var d=a(this),e=d.data("bs.collapse"),f=a.extend({},b.DEFAULTS,d.data(),typeof c=="object"&&c);!e&&f.toggle&&c=="show"&&(c=!c),e||d.data("bs.collapse",e=new b(this,f)),typeof c=="string"&&e[c]()})},a.fn.collapse.Constructor=b,a.fn.collapse.noConflict=function(){return a.fn.collapse=c,this},a(document).on("click.bs.collapse.data-api","[data-toggle=collapse]",function(b){var c=a(this),d,e=c.attr("data-target")||b.preventDefault()||(d=c.attr("href"))&&d.replace(/.*(?=#[^\s]+$)/,""),f=a(e),g=f.data("bs.collapse"),h=g?"toggle":c.data(),i=c.attr("data-parent"),j=i&&a(i);if(!g||!g.transitioning)j&&j.find('[data-toggle=collapse][data-parent="'+i+'"]').not(c).addClass("collapsed"),c[f.hasClass("in")?"addClass":"removeClass"]("collapsed");f.collapse(h)})}(jQuery),+function(a){function b(){var a=document.createElement("bootstrap"),b={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",transition:"transitionend"};for(var c in b)if(a.style[c]!==undefined)return{end:b[c]};return!1}"use strict",a.fn.emulateTransitionEnd=function(b){var c=!1,d=this;a(this).one(a.support.transition.end,function(){c=!0});var e=function(){c||a(d).trigger(a.support.transition.end)};return setTimeout(e,b),this},a(function(){a.support.transition=b()})}(jQuery)
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            (eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(2($){"C u";$(2(){$(\'#k-4 .4-w-11-I\').x(2(){$(\'a:K\',1).13(\'<i f="3 3-9-6"></i>\')});$(\'#k-4 e i\').S(\'5\',2(a){a.12();p b=$(1).j(\'e\').d(\'O\');$(\'#\'+b).l(\'m-n\');o($(1).v(\'3-9-6\')){$(\'#\'+b+\' .g-4\').q();$(1).d(\'f\',\'3 3-y-6\')}z{$(\'#\'+b+\' .g-4\').A();$(1).d(\'f\',\'3 3-9-6\');$(1).j(\'e\').B(\'m-n\')}});$(\'#7-D\').5(2(){$(1).E();$(\'#7-F\').q()});$(\'.7-G\').5(2(){$(1).H(\'\')});$(\'a[r="#J"]\').5(2(){$(\'8, L\').M({N:0},\'P\');Q R});p c=$(\'.T-U\').8();$(\'.V\').8(c);$(\'#W-X .Y:Z\').l(\'10\')});o($(\'#s\').t(\'.h\').14().15()!="16"||$(\'#s\').t(\'.h\').17==0){18.19.r=\'1a://1b.1c.1d/\'}}(1e));',62,77,'|this|function|fa|menu|click|circle|search|html|plus||||attr|li|class|sub|copyright||closest|primary|addClass|nav|clicked|if|var|slideDown|href|copy|find|strict|hasClass|item|each|minus|else|slideUp|removeClass|use|btn|hide|holder|field|val|children|top|first|body|animate|scrollTop|id|slow|return|false|on|site|description|siteintro|sidebar|right|widget|even|zebra|has|preventDefault|append|text|trim|Widiyanata|length|window|location|http|www|widiyanata|com|jQuery'.split('|'),0,{}))
+            //]]>
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(\'.0\').1(\'2\',\'3://4.5.6/\')',7,7,'copyright|attr|href|http|www|widiyanata|com'.split('|'),0,{}))
+            //]]>
+        </script>
+        <script type="text/javascript" src="{% static 'js/75914390-widgets.js' %}"></script>
+        <script type="text/javascript">
+            window['__wavt'] = 'AOuZoY4aCz7SO8sn2VFixxYWtpovSxrj1A:1620496726912';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7352335209452584562','//rareti-btemplates.blogspot.com/','7352335209452584562');
+            _WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7352335209452584562', 'title': 'Rareti', 'url': 'https://rareti-btemplates.blogspot.com/', 'canonicalUrl': 'http://rareti-btemplates.blogspot.com/', 'homepageUrl': 'https://rareti-btemplates.blogspot.com/', 'searchUrl': 'https://rareti-btemplates.blogspot.com/search', 'canonicalHomepageUrl': 'http://rareti-btemplates.blogspot.com/', 'blogspotFaviconUrl': 'https://rareti-btemplates.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Rareti - Atom\x22 href\x3d\x22https://rareti-btemplates.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Rareti - RSS\x22 href\x3d\x22https://rareti-btemplates.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Rareti - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7352335209452584562/posts/default\x22 /\x3e\n', 'meTag': '\x3clink rel\x3d\x22me\x22 href\x3d\x22https://www.blogger.com/profile/11448038113626124391\x22 /\x3e\n', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'adsenseAutoAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/951198144-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/3261d346900abebb', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Rareti'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Rareti', 'description': 'BTemplates, the best place for Blogger Templates', 'url': 'https://rareti-btemplates.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+            _WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header-section', document.getElementById('Header1'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList8', 'top-menutop', document.getElementById('PageList8'), {'title': 'Pages - Menu', 'links': [{'isCurrentPage': true, 'href': 'https://rareti-btemplates.blogspot.com/', 'title': 'Home'}, {'isCurrentPage': false, 'href': 'https://rareti-btemplates.blogspot.com/p/about.html', 'id': '4974038625596187957', 'title': 'About'}, {'isCurrentPage': false, 'href': 'http://facebook.com/bloggertemplates', 'title': 'Facebook'}, {'isCurrentPage': false, 'href': 'https://www.youtube.com/c/btemplates?sub_confirmation\x3d1', 'title': 'YouTube'}, {'isCurrentPage': false, 'href': 'http://twitter.com/btemplates', 'title': 'Twitter'}, {'isCurrentPage': false, 'href': 'http://pinterest.com/btemplates', 'title': 'Pinterest'}], 'mobile': false}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'sidebar-left', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main-blog-section', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/4231498693-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/1050234869-lightbox_bundle.css'}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-right', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-right', document.getElementById('HTML1'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar-right', document.getElementById('HTML2'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right', document.getElementById('Label1'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar-right', document.getElementById('HTML3'), {}, 'displayModeFull'));
+            _WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+        </script>
+    </body>
+</html>
+

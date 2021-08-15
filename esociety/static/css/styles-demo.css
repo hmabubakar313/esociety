@@ -1,0 +1,55 @@
+#wpadminbar{display:none;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}
+ol,ul{list-style:none;}
+blockquote,q{color:#666;quotes:none;font-style:italic;margin:5px 20px 15px;padding:0 10px 0 60px;}
+acronym{border-bottom:1px dotted;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;}
+:focus{outline:0;}
+.clear{clear:both;display:block;overflow:hidden;width:0;height:0;}
+.clearfix:after{clear:both;content:'.';display:block;visibility:hidden;height:0;}
+.clearfix{display:block;}
+* html .clearfix{height:1%;}
+.fl{float:left;}
+.fr{float:right;}
+body{width:100%;background-color:#000;font-family:Arial,Verdana,Helvetica;}
+#navbar{position:fixed;left:0;right:0;top:0;height:40px;background:#111;width:100%;color:#fff;line-height:40px;padding:0 1em;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;}
+#navbar a,#view-demo,#no-responsive-demo{float:left;margin-right:20px;color:#fff;text-decoration:none;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;}
+#logo-demo{background:transparent url(../images/blogger-templates-demo.png) 0 0;width:150px;height:27px;display:block;text-indent:100%;white-space:nowrap;overflow:hidden;margin-top:6px;}
+a#download-demo{background:#333;padding:0 5%;font-weight:700;opacity:1;}
+a#download-demo:hover{opacity:.9;}
+#portviews a{opacity:.8;padding:0 6px;}
+#portviews a:hover{opacity:1;}
+#portviews a.active{opacity:1;background:#333;padding:0 13px;position:relative;z-index:2;}
+#portviews a.active:after{top:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(51,51,51,0);border-top-color:#333;border-width:5px;margin-left:-5px;}
+#no-responsive-demo{color:#FF6;position:relative;cursor:pointer;}
+#no-responsive-demo span{position:absolute;background-color:#FFA;color:#333;font-size:.7em;line-height:1.6em;padding:.5em;left:-30%;top:30px;width:13em;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;display:none;-webkit-transition:all .2s;-moz-transition:all .2s;-ms-transition:all .2s;-o-transition:all .2s;transition:all .2s;}
+#no-responsive-demo span:after{bottom:100%;left:11px;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(255,255,170,0);border-bottom-color:#FFA;border-width:5px;margin-left:-5px;}
+a#close-navbar{float:right;padding-right:20px;}
+#navbar .post-edit-link{float:right;}
+#frame-demo-c{position:fixed;width:100%;height:100%;top:40px;left:0;right:0;max-height:100%;max-width:100%;z-index:-1;-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;}
+#viewport-high{display:block;content:" ";background:#000;width:100%;height:100%;left:0;opacity:.5;position:fixed;top:40px;visibility:hidden;z-index:1;-webkit-transition:all 1s;-moz-transition:all 1s;-ms-transition:all 1s;-o-transition:all 1s;transition:all 1s;}
+#frame-demo{width:100%;height:100%;margin:0 auto;border:0;display:block;-webkit-transition:all 1s;-moz-transition:all 1s;-ms-transition:all 1s;-o-transition:all 1s;transition:all 1s;}
+.icon{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor;}
+.landscape{transform:rotate(90deg);}
+.favorited {color:#dc3545 !important;}
+@media screen and (max-width: 1024px) {
+    #desktop-1{display:none;}
+    #close-navbar span,#view-demo{display:none;}
+    #no-responsive-demo span{padding:.2em;width:5.5em;}
+}
+@media screen and (max-width: 768px) {
+    #tablet-2{display:none;}
+    #download-demo span{display:none;}
+}
+@media screen and (max-width: 568px) {
+    #tablet-1{display:none;}
+    #logo-demo{background:transparent url(../images/bt-demo.png) 0 0;width:42px;height:25px;margin-top:7px;}
+    a#download-demo{padding:0 8%;}
+    #download-demo strong{display:none;}
+}
+@media screen and (max-width: 380px) {
+    .add-favorite{display:none;}
+}
+@media screen and (max-width: 320px) {
+    #mobile-2{display:none;}
+}

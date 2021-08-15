@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    <table  width="100%" class="table table-hover mt-4">
+    <thead class="">
+       <tbody>
+        <tr>
+            
+            <th>User ID</th>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>User Pass</th>
+            <th>User DOB</th>
+            <th>User Reg_No</th>
+            <th>Add User</th>
+            <th>Delete User</th>
+            
+
+        </tr>
+       </tbody>
+    </thead>
+    
+        {% for row in person %}
+        <tr>
+
+            {%  for column in row %}
+                
+                <td>{{column}}</td> 
+                               
+               
+              
+            {% endfor %}
+           
+            <br>
+            <td><a href="{% url 'add-user' %}"><button class="btn btn-primary"><i class="fas fa-user-plus"></i></button></a></td>
+           
+            <td><a href="{% url 'delete-user' id=row.0 %}"><button class="btn btn-primary"><i class="fas fa-user-minus"></i></button></a></td>
+            
+           
+        </tr>
+     
+             
+      
+        {% endfor %}
+    </table>
+    {% endblock %}
+</body>
+</html>

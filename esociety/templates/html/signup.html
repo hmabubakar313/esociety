@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap4 %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esociety</title>
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-lg-6 col-md-6 col-sm-6" >
+             <div>
+                <img  class="myu_logo rounded mx-auto d-block mt-5"  src="{% static 'images/myu_logo.png' %}" alt="">
+                <br>
+                <img class="people_image rounded mx-auto d-block pt-2" src="{%  static 'images/people.jpg' %}" alt="">
+             </div>
+                <p class="welcome text-center">
+                    Welcome To #<span class="e">e</span><span class="society">Society</span>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="background-color: #6172A0; overflow-x: scroll;">
+                <h1 class="text-center heading"><span class="e_head">e</span><span class="society_head">Society</span></h1>
+                <br>
+                <h2 class="text-center heading_2">Sign Up</>
+          
+                <form action="/save/" class="signup_form" method="POST">
+                                 {% csrf_token %}
+                    <div class="container-fluid ">
+                        <div class="row d-flex justify-content-center" >
+                            <div class="col-lg-6 col-md-6 col-sm-6 ">
+                             <div class="text-center form-container">
+                                <div class="input-group mb-4  text-center d-flex justify-content-center" >
+                                    <div class="input-group-prepend  text-center">
+                                      <span class="input-group-text rounded-circle icon"><em class="far fa-user "></em></spaan>
+                                    </div>
+                                    <input type="text" class="input_email text-center" placeholder="Username" id="usr" name="username">
+                                </div>
+                             </div>
+                               <div class="input-group mb-4  text-center d-flex justify-content-center"  >
+                                <div class="input-group-prepend  text-center">
+                                  <span class="input-group-text rounded-circle icon"><em class="far fa-envelope"></em></span>
+                                </div>
+                                <input type="text" class="input_email text-center" placeholder="Email address" id="usr" name="email">
+                            </div>
+                            <div class="input-group mb-4 text-center d-flex justify-content-center"  >
+                                <div class="input-group-prepend  text-center">
+                                  <span class="input-group-text rounded-circle icon"><em class="fal fa-lock"></em></span>
+                                </div>
+                                <input type="password" class="input_email text-center" placeholder="Create Password" id="usr" name="password">
+                            </div>
+                            <div class="input-group mb-4  text-center d-flex justify-content-center"  >
+                                <div class="input-group-prepend  text-center">
+                                  <span class="input-group-text rounded-circle icon"><em class="fal fa-calendar-alt"></em></span>
+                                </div>
+                                <input type="text" placeholder="Birthday" id=""  name="birthday" class="input_email text-center"> 
+                            </div>
+                            <div class="input-group mb-4  text-center d-flex justify-content-center"  >
+                                <div class="input-group-prepend  text-center">
+                                  <span class="input-group-text rounded-circle icon"><em class="fal fa-file"></em></span>
+                                </div>
+                                <input type="text" class="input_email text-center" placeholder="Reg.NO" id="usr" name="reg_no">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="get_start mt-5" type="submit">Get Started</button>
+                </form>
+
+                <p class="already_account mt-3">Already have an account? <u>Signin Here</u></p>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="{% static 'jquery-3.5.0.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="{https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js}" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anohttps://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.jsnymous"></script>
+</html>
