@@ -9,7 +9,7 @@ from django.contrib import admin
 
 admin.autodiscover()
 urlpatterns = [ 
-    path('post/', views.post,name='post'),
+    path('blogpost/', views.post,name='post'),
     path('profile/',views.profile,name='profile'),
     path('save_post/',views.save_post,name='save_post'),
   
