@@ -12,6 +12,6 @@ urlpatterns = [
     path('blogpost/', views.post,name='post'),
     path('profile/',views.profile,name='profile'),
     path('save_post/',views.save_post,name='save_post'),
-    path('feed/',views.feed,name='feed')
+    path('feed/',views.feed,name='feed'),
   
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

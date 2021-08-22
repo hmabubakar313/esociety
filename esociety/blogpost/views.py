@@ -26,13 +26,15 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-public_tweets = api.search('Trump')
-print(public_tweets)
-for tweet in public_tweets:
-    tweets=tweet.text
-    print("tweets")
-    print(tweets)
-    # getting tweets
+public_tweets = api.search(q="naumansaleemm",count="10")
+# print(public_tweets)
+# print("hy")
+
+
+# for tweet in public_tweets:
+#     tweets=tweet.text
+#     print(tweets)
+
 
 # Create your views here.
 def post(request):
@@ -104,8 +106,7 @@ def feed(request):
         finally:
             if (connection.is_connected()):
                 print("MySQL connection is closed")
-                return render(request, "html/feed.html",{'result':result})
-                print("Hello")
+                return render(request, "html/feed.html",{'result':result,'public_tweets':public_tweets})
             else:
                 print("MYSQL is not closed")
     
