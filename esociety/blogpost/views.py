@@ -26,8 +26,21 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-public_tweets = api.search(q="naumansaleemm",count="10")
+public_tweets = api.user_timeline(screen_name = 'naumansaleemm',count=5, tweet_mode="extended")
 # print(public_tweets)
+# for tweet in public_tweets:
+#     print(tweet.full_text)
+#     print(tweet.created_at)
+    # print(tweet.entities["media"][0]["media_url"])
+
+
+# for
+# for x in public_tweets:
+#     y=x.full_text
+
+
+
+
 # print("hy")
 
 
