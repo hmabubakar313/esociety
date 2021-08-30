@@ -2,10 +2,11 @@
 {% load static %}
 {% block image %}
 {% for tweet in public_tweets %}
+
 <div class="main-blog-section section" id="main-blog-section">
     <div class="widget Blog" data-version="1" id="Blog1">
         <div class="blog-posts hfeed">
-            <!--Can't find substitution for tag [defaultAdStart]-->
+            
             <div class="date-outer">
                 <h2 class="date-header">
                     <span>
@@ -48,8 +49,9 @@
                                         createSummaryAndThumb("summary1233629710084935028");
                                     </script>
                                     <div style="float:left;padding-right:10px;margin-top:10px;">
-                                        <a class="morer" href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html">
+                                        <a class="morer" href="{% url 'extended_feed' id=tweet.id %}">
                                         Read More
+                                      
                                         </a>
                                     </div>
                                     <div style="clear: both;"></div>
@@ -131,6 +133,7 @@
         </div>
     </div>
 </div>
+
                     {% endfor %} 
 {%  endblock %}
 
