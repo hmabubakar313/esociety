@@ -105,5 +105,7 @@ def feed(request):
                 print("MYSQL is not closed")
 
 
-def extended_feed(request):
-    return render(request, 'html/extend_feed.html')
+def extended_feed(request,id):
+   
+    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets,'id':id})
+
