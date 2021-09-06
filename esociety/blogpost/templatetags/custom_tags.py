@@ -1,10 +1,7 @@
 from django import template
+from django.template.loader import get_template
 from textblob import TextBlob
 import tweepy
-from django.template.loader import get_template
-# # Step 1 - Authenticate
-
-#  Twitter API
 consumer_key= '6g8yTtFKtdzdd5Y8O0CkZk7d0'
 consumer_secret= 'FrzeRqhf8b1fRo5MD5xJ6mWZAL25BFFMDrOWsnQrrESIWaq97q' 
 
@@ -15,39 +12,27 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-public_tweets = api.user_timeline(screen_name = 'masif3110',count=5, tweet_mode="extended")
+
+
+
 
 register = template.Library()
-# from .models import TextBlob
-# print(public_tweets)
 
+a='abc'
 arr1 = []
-@register.simple_tag
-def get_expressions(public_tweets):
+@register.simple_tag()
+def get_expressions(format_string):
+    print("inside function")
+    public_tweets = api.user_timeline(screen_name = 'masif3110',count=1, tweet_mode="extended")
     for tweet in public_tweets:
-        analysis = TextBlob(tweet.text)    
-        print(analysis.sentiment)
-        if (analysis.sentiment.subjectivity>0):
-            arr1.append(analysis.sentiment.polarity)
-        
-        print("polarity is ====")
-        print(analysis.sentiment.polarity)
-        length_arr1=len(arr1)    
+        x=tweet.full_text
+        print(x)
+        # now i need to do analysis on 'x'
+        return x
+    # return x
+    # return public_tweets
 
-        total_pol = sum(arr1)
-        avg_pol = total_pol/len(arr1)
 
-        print("=======Avg Pol=========")
-        print (avg_pol)
-        
-        if (analysis.sentiment.polarity>0   and  analysis.sentiment.subjectivity>0):
-            positive = analysis.sentiment.polarity
-            print("positive"+positive)
-            return positive
-        else:
-            negative = analysis.sentiment.subjectivity
-            print("negative"+negative)
-users_template = get_template('html/extend_feed.html')
 
 # register.filter('modify_name', modify_name)
                 

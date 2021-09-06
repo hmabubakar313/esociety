@@ -1,13 +1,13 @@
 
 {% extends 'html/base.html' %}
 {% load static %}
-{% comment %} extend_feed.html {% endcomment %}
+{% comment %} html/extend_feed.html {% endcomment %}
 {% load custom_tags %}
 
 
 {% block image %}
+{% get_expressions "%x" %}
 
-{{positive}}
 <!-- <% from textblob import TextBlob %> -->
 {% for tweet in public_tweets %}
 
