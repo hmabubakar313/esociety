@@ -6,7 +6,9 @@
 
 
 {% block image %}
-{% get_expressions "%x" %}
+
+{% get_expressions "%positive  %negative" %}
+
 
 <!-- <% from textblob import TextBlob %> -->
 {% for tweet in public_tweets %}

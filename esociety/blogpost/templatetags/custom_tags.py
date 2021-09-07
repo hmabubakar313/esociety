@@ -18,17 +18,43 @@ api = tweepy.API(auth)
 
 register = template.Library()
 
-a='abc'
-arr1 = []
+
+
 @register.simple_tag()
 def get_expressions(format_string):
+    arr1 = []
     print("inside function")
-    public_tweets = api.user_timeline(screen_name = 'masif3110',count=1, tweet_mode="extended")
+    public_tweets = api.user_timeline(screen_name = 'masif3110',count=3, tweet_mode="extended")
     for tweet in public_tweets:
         x=tweet.full_text
         print(x)
+        analysis = TextBlob(tweet.full_text)
+        print("analysis : ")
+        print(analysis.sentiment)
+        if (analysis.sentiment.subjectivity>0):
+            print("if statement") 
+            if (analysis.sentiment.subjectivity>0):
+                arr1.append(analysis.sentiment.polarity)
+                print(arr1)
+                print("length of array : ")
+                length_arr1=len(arr1)
+                print(length_arr1)
+
+                total_pol = sum(arr1)
+                print("total polarity : ")
+                print(total_pol)
+                avg_pol = total_pol/len(arr1)
+                print("=======Avg Pol=========")
+                print (avg_pol)
+        if (analysis.sentiment.polarity>0   and  analysis.sentiment.subjectivity>0):
+            positive="positive"
+            return positive
+        else:
+            negative='negative'
+            return negative
+        # avg_pol = total_pol/len(arr1)
         # now i need to do analysis on 'x'
-        return x
+        # return x
     # return x
     # return public_tweets
 
