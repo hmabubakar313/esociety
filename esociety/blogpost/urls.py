@@ -9,9 +9,10 @@ from django.contrib import admin
 
 admin.autodiscover()
 urlpatterns = [ 
-    path('blogpost/', views.post,name='post'),
+    path('post/', views.post,name='post'),
     path('profile/',views.profile,name='profile'),
     path('save_post/',views.save_post,name='save_post'),
     path('feed/',views.feed,name='feed'),
-    path('extended_feed/<int:id>/',views.extended_feed,name='extended_feed')
+    path('extended_feed/<int:id>/',views.extended_feed,name='extended_feed'),
+    
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

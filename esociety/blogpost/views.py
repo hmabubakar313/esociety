@@ -26,7 +26,6 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
-public_tweets = api.user_timeline(screen_name = 'masif3110',count=5, tweet_mode="extended")
 
 
 # Create your views here.
@@ -77,7 +76,7 @@ def save_post(request):
 
 
 def feed(request):
-       
+        public_tweets = api.user_timeline(screen_name = 'masif3110',count=5, tweet_mode="extended")
         try:
             connection = mysql.connector.connect(host='localhost',
                                             database='esociety',
@@ -106,6 +105,27 @@ def feed(request):
 
 
 def extended_feed(request,id):
-   
-    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets,'id':id})
+    # print(id)
+    # print("request")
+    
+    # this id is coming right 
+    public_tweets = api.get_status(id=id)
+    
+    # print(id_tweet)
+    # print(id)
+
+    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets})
+
+
+
+
+    
+
+
+
+
+
+
+
+
 

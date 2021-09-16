@@ -1,4 +1,3 @@
-
 {% extends 'html/base.html' %}
 {% load static %}
 {% comment %} html/extend_feed.html {% endcomment %}
@@ -7,13 +6,11 @@
 
 {% block image %}
 
-{% get_expressions "%positive  %negative" %}
+{% get_expressions "%a" %}
 
 
 <!-- <% from textblob import TextBlob %> -->
-{% for tweet in public_tweets %}
 
-{% if tweet.id == id %}
 
 <div class="main-blog-section section" id="main-blog-section">
     <div class="widget Blog" data-version="1" id="Blog1">
@@ -34,13 +31,13 @@
                                 <div class="post-body entry-content">
                                     <h2 class="post-title entry-title">
                                         <a href="https://rareti-btemplates.blogspot.com/2016/08/images-in-this-template.html">
-                                        {{tweet.author.name}}
+                                        {{public_tweets.user.name}}
                                         </a>
                                     </h2>
                                     <p class="post-date-author">
                                         <i class="fa fa-calendar"></i>
                                         &nbsp;&nbsp;
-                                        {{tweet.created_at}}
+                                        {{public_tweets.created_at}}
                                         &nbsp;&nbsp;
                                         <i class="fa fa-user"></i>
                                         &nbsp;&nbsp;
@@ -50,10 +47,10 @@
                                     </p>
                                     <hr>
                                     <div id="summary1233629710084935028">
-                                        <img src="{{  tweet.entities.media.0.media_url }}" class="pbtthumbimg">
+                                        <img src="{{  public_tweets.extended_entities.media.0.media_url_https }}" class="pbtthumbimg">
                                         <div style="line-height:1.6;">
                                             <p>
-                                                 {{tweet.full_text}}
+                                                 {{public_tweets.text}}
                                                  
                                             </p>
                                         </div>
@@ -147,8 +144,7 @@
     </div>
 </div>
 
-                    {% endif %}
-                    {%  endfor %}
+                   
                  
                   
                     
