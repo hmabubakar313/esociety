@@ -13,8 +13,8 @@ import time
 import sqlite3
 from sqlite3 import Error
 from textblob import TextBlob
-
-
+# from .templatetags import custom_tags
+import requests
 #  Twitter API
 consumer_key= '6g8yTtFKtdzdd5Y8O0CkZk7d0'
 consumer_secret= 'FrzeRqhf8b1fRo5MD5xJ6mWZAL25BFFMDrOWsnQrrESIWaq97q' 
@@ -35,7 +35,7 @@ def post(request):
 def profile(request):
     return render(request,"html/profile.html")
 
-
+    
 def save_post(request):
     if request.method == 'POST':
         slug = request.POST['slug']
@@ -76,7 +76,7 @@ def save_post(request):
 
 
 def feed(request):
-        public_tweets = api.user_timeline(screen_name = 'masif3110',count=5, tweet_mode="extended")
+        public_tweets = api.user_timeline(screen_name = 'masif3110',count=1, tweet_mode="extended")
         try:
             connection = mysql.connector.connect(host='localhost',
                                             database='esociety',
@@ -105,16 +105,30 @@ def feed(request):
 
 
 def extended_feed(request,id):
-    # print(id)
-    # print("request")
-    
-    # this id is coming right 
     public_tweets = api.get_status(id=id)
-    
-    # print(id_tweet)
-    # print(id)
+    text = public_tweets.text
+    print(text)
+    def get_tweet_sentiment(self, text):
+        print('inside analysis function')
+        analysis = TextBlob(self.text)
+        print('textblob')
+        # set sentiment
+        if analysis.sentiment.polarity > 0:
+            print('positive')   
+        elif analysis.sentiment.polarity == 0:
+            print('neutral')
+        else:
+            print('negative')
+    print('rendering') 
+    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets, 'name':'Asif'})
 
-    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets})
+
+# get tweets json via id 
+
+
+
+
+
 
 
 

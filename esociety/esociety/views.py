@@ -118,6 +118,7 @@ def home(request):
             'e_mail': e_mail,
             'reg_no': reg_no,
         }
+        print("H")
         try:
             connection = mysql.connector.connect(host='localhost',
                                             database='esociety',
@@ -139,12 +140,13 @@ def home(request):
             print(cursor.rowcount, "Record get successfully from students table")
             
             
-
+            print("before except")
         except mysql.connector.Error as error:
                 print("Failed to get record from students table {}".format(error))
 
         finally:
             if (connection.is_connected()):
+                print("connection if")
                 connection.close()
                 print("MySQL connection is closed")
             else:

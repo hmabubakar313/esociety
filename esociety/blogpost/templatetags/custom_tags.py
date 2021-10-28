@@ -3,9 +3,10 @@ from django.template.loader import get_template
 from textblob import TextBlob
 import tweepy
 import requests
+# from blogpost.views import extended_feed
 # need to import views
 
-from blogpost.views import extended_feed
+# from blogpost.views import public_tweets
 consumer_key= '6g8yTtFKtdzdd5Y8O0CkZk7d0'
 consumer_secret= 'FrzeRqhf8b1fRo5MD5xJ6mWZAL25BFFMDrOWsnQrrESIWaq97q' 
 
@@ -22,14 +23,19 @@ api = tweepy.API(auth)
 
 
 
+
 register = template.Library()
 
 
 
 
+
+
+
+
 @register.simple_tag()
-def get_expressions(format_string):
-    a='abc'
+def get_expressions(format_string,):
+    a = 'asd'
     print("inside function")
     return a
     
