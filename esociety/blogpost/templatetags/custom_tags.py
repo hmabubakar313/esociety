@@ -7,11 +7,11 @@ import requests
 # need to import views
 
 # from blogpost.views import public_tweets
-consumer_key= '6g8yTtFKtdzdd5Y8O0CkZk7d0'
-consumer_secret= 'FrzeRqhf8b1fRo5MD5xJ6mWZAL25BFFMDrOWsnQrrESIWaq97q' 
+consumer_key= 'consumer_key'
+consumer_secret= 'consumer_secret' 
 
-access_token='930155901666971648-cM8KS94m8UpDgCmYJ0Kl9HYuLBEaqkX'
-access_token_secret='P6G4GUXLpTAdDLjKEyQd2rb7fMSRRG7cQhquymI0fjhOz'
+access_token='access_token'
+access_token_secret='access_token'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -33,11 +33,11 @@ register = template.Library()
 
 
 
-@register.simple_tag()
-def get_expressions(format_string,):
-    a = 'asd'
-    print("inside function")
-    return a
+# @register.simple_tag()
+# def get_expressions(format_string):
+#     a = 'asd'
+#     print("inside function")
+#     return a
     
 #             return negative
         # avg_pol = total_pol/len(arr1)

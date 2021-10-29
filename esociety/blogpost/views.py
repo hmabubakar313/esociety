@@ -111,6 +111,7 @@ def extended_feed(request,id):
     def get_tweet_sentiment(self, text):
         print('inside analysis function')
         analysis = TextBlob(self.text)
+        print(analysis)
         print('textblob')
         # set sentiment
         if analysis.sentiment.polarity > 0:
