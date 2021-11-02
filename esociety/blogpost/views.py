@@ -108,23 +108,29 @@ def extended_feed(request,id):
     public_tweets = api.get_status(id=id)
     text = public_tweets.text
     print(text)
-    def get_tweet_sentiment(self, text):
-        print('inside analysis function')
-        analysis = TextBlob(self.text)
-        print(analysis)
-        print('textblob')
-        # set sentiment
-        if analysis.sentiment.polarity > 0:
-            print('positive')   
-        elif analysis.sentiment.polarity == 0:
-            print('neutral')
-        else:
-            print('negative')
+    
+    # print('inside analysis function')
+    analysis = TextBlob(text).sentiment
+    print(analysis)
+    analysisPol = TextBlob(text).polarity
+    # print('textblob')
+    # set sentiment
+    if analysisPol > 0:
+        x = 'positive'   
+    elif analysisPol == 0:
+        x='netural'
+    else:
+        x='negative'
+
+    
+    # get_tweet_sentiment(self, text)
+
     print('rendering') 
-    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets, 'name':'Asif'})
+    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets, 'name':'Asif','pol':x})
 
 
-# get tweets json via id 
+
+
 
 
 
