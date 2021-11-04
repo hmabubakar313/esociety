@@ -24,7 +24,7 @@ def signup(request):
 def save(request):
     if request.method == 'POST':
         username = request.POST['username']
-        password         = request.POST['password']
+        password   = request.POST['password']
         e_mail = request.POST['email']
         birthday = request.POST['birthday']
         reg_no = request.POST['reg_no']

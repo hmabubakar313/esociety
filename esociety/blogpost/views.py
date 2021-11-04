@@ -76,7 +76,7 @@ def save_post(request):
 
 
 def feed(request):
-        public_tweets = api.user_timeline(screen_name = 'masif3110',count=1, tweet_mode="extended")
+        public_tweets = api.user_timeline(screen_name = 'aqibahmed886',count=1, tweet_mode="extended")
         try:
             connection = mysql.connector.connect(host='localhost',
                                             database='esociety',
@@ -113,20 +113,33 @@ def extended_feed(request,id):
     analysis = TextBlob(text).sentiment
     print(analysis)
     analysisPol = TextBlob(text).polarity
-    # print('textblob')
-    # set sentiment
-    if analysisPol > 0:
-        x = 'positive'   
-    elif analysisPol == 0:
-        x='netural'
-    else:
-        x='negative'
+    print(analysisPol)
+    # measuring polarity
+    # comaprison of polarity
 
+    if (analysisPol > -1 or analysisPol < -0.5):
+        x = 'negative'
+        y='🙁'
+        
+    elif (analysisPol > -0.5 or analysisPol > -0.1):
+        x='negative'
+        y='🤧'
+    elif (analysisPol > 0.1 or analysisPol < 0.5):
+        x='positive'
+        Y='🙂'
+
+    elif (analysisPol > 0.5 or analysisPol < 1):
+        x='positive'
+        y='😊'
+        
+    else:
+        pass 
     
+        
     # get_tweet_sentiment(self, text)
 
     print('rendering') 
-    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets, 'name':'Asif','pol':x})
+    return render(request, 'html/extend_feed.html',{'public_tweets':public_tweets, 'name':'Asif','pol':x,'y':y})
 
 
 
